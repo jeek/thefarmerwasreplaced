@@ -3,7 +3,7 @@ def buy(item):
 	while not good:
 		good = True
 		for cost_entry in get_cost(item):
-			if cost_entry[0] == Items.Hay and num_items(Items.Hay) < cost_entry[1]:
+			while cost_entry[0] == Items.Hay and num_items(Items.Hay) < cost_entry[1]:
 				good = False
 				plant_grass()
 				while not can_harvest():

@@ -6,4 +6,5 @@ def plant_a_bush():
 			harvest()
 		if get_ground_type() == Grounds.Soil:
 			till()
-		plant(Entities.Bush)		
+		plant(Entities.Bush)
+		hydrate()	

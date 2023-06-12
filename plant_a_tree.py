@@ -7,4 +7,4 @@ def plant_a_tree():
 		if get_ground_type() == Grounds.Soil:
 			till()
 		plant(Entities.Tree)
-		use_item(Items.Water_Tank)
+		hydrate()
